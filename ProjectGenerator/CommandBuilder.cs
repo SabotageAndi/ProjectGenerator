@@ -10,8 +10,8 @@ namespace ProjectGenerator
             ArgumentsFormat = argumentsFormat;
         }
 
-        public string ArgumentsFormat {get;private set;}
-        public string ExecutablePath {get;private set;}
+        public string ArgumentsFormat { get; private set; }
+        public string ExecutablePath { get; private set; }
 
         public void Execute()
         {

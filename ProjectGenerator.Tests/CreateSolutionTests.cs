@@ -10,7 +10,7 @@ namespace ProjectGenerator.Tests
     {
         private string _tempPath;
 
-       
+
         public void Dispose()
         {
             if (Directory.Exists(_tempPath))
@@ -37,7 +37,7 @@ namespace ProjectGenerator.Tests
             //ARRANGE
             _tempPath = CleanupTestDirectory();
             var solution = Solution.Create().InFolder(_tempPath).WithName("TestSolution");
-             
+
 
             //ACT
             var create = new Create();

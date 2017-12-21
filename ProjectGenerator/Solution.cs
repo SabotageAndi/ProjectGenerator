@@ -17,7 +17,7 @@ namespace ProjectGenerator
 
         public Solution AddProject(Project project)
         {
-            var newSolution = (Solution)this.MemberwiseClone();
+            var newSolution = (Solution) this.MemberwiseClone();
             var newProjects = new List<Project>(newSolution.Projects);
             newProjects.Add(project);
             newSolution.Projects = newProjects;
@@ -34,7 +34,7 @@ namespace ProjectGenerator
 
         private Solution CloneSolution()
         {
-            return (Solution)this.MemberwiseClone();
+            return (Solution) this.MemberwiseClone();
         }
 
         public Solution WithName(string name)
@@ -45,9 +45,8 @@ namespace ProjectGenerator
         }
 
         public string RootPath { get; private set; }
-        
-        public string Name { get; private set; }
 
+        public string Name { get; private set; }
 
 
         public IReadOnlyCollection<Project> Projects { get; private set; }

@@ -25,7 +25,6 @@ namespace ProjectGenerator
 
         private void Project(Project project)
         {
-
         }
     }
 }

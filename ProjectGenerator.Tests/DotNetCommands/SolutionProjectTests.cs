@@ -10,7 +10,7 @@ namespace ProjectGenerator.Tests.DotNetCommands
         [Fact]
         public void AddProjectToSolutionTest()
         {
-            var command =  DotNet.Solution().AddProject().ToSolution("solutionPath").Project("projectPath").Build();
+            var command = DotNet.Solution().AddProject().ToSolution("solutionPath").Project("projectPath").Build();
 
             command.ArgumentsFormat.ShouldBe("sln \"solutionPath\" add \"projectPath\"");
         }

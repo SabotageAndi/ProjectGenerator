@@ -9,14 +9,13 @@ namespace ProjectGenerator
 
         public Project()
         {
-            
         }
 
         public Project(string name)
         {
             this.Name = name;
-
         }
+
         public string Name { get; private set; }
     }
 }

@@ -6,7 +6,7 @@ namespace ProjectGenerator.Tests.DotNetCommands
 {
     public class BuildTests
     {
-         [Fact]
+        [Fact]
         public void WithoutParameters()
         {
             var commandBuilder = DotNet.Build().Build();

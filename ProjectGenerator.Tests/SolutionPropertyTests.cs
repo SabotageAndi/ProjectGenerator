@@ -22,7 +22,6 @@ namespace ProjectGenerator.Tests
             var solution = Solution.Create().WithName("TestSolution");
 
             solution.Name.ShouldBe("TestSolution");
-            
         }
 
         [Fact]
@@ -30,7 +29,7 @@ namespace ProjectGenerator.Tests
         {
             var solution = Solution.Create().InFolder("/rootfolder/");
 
-            solution.RootPath.ShouldBe("/rootfolder/");            
+            solution.RootPath.ShouldBe("/rootfolder/");
         }
     }
 }

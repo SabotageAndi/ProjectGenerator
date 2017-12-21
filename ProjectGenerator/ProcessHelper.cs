@@ -32,7 +32,6 @@ namespace ProjectGenerator
             {
                 StartInfo = psi,
                 EnableRaisingEvents = true,
-
             };
 
             StringBuilder output = new StringBuilder();
@@ -79,9 +78,9 @@ namespace ProjectGenerator
                     }
                     else
                     {
-                        throw new TimeoutException($"Process {psi.FileName} {psi.Arguments} took longer than {_timeout.TotalMinutes} min to complete");
+                        throw new TimeoutException(
+                            $"Process {psi.FileName} {psi.Arguments} took longer than {_timeout.TotalMinutes} min to complete");
                     }
-
                 }
             }
 

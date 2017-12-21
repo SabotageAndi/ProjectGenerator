@@ -8,10 +8,10 @@ namespace ProjectGenerator.DotNetCommands
         {
             private readonly NewCommandBuilder _newCommandBuilder;
             private string _templateName = "classlib";
+
             public NewProjectCommandBuilder(NewCommandBuilder newCommandBuilder)
             {
                 this._newCommandBuilder = newCommandBuilder;
-
             }
 
             public NewProjectCommandBuilder UseTemplate(string templateName)
@@ -23,9 +23,9 @@ namespace ProjectGenerator.DotNetCommands
             protected override string BuildArguments()
             {
                 var arguments = $"new {_templateName}";
-                
 
-                return arguments;                
+
+                return arguments;
             }
         }
     }

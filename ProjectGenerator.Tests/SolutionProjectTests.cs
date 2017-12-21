@@ -16,7 +16,6 @@ namespace ProjectGenerator.Tests
 
             newSolution.Projects.Count.ShouldBe(1);
             newSolution.Projects.ShouldContain(project);
-
         }
 
         [Fact]

@@ -33,7 +33,7 @@ namespace ProjectGenerator.DotNetCommands
                 if (_projectPath.IsNullOrWhiteSpace()) throw new System.ArgumentNullException("Project is not set");
 
                 var arguments = $"sln \"{_solutionPath}\" add \"{_projectPath}\"";
-               
+
                 return arguments;
             }
         }

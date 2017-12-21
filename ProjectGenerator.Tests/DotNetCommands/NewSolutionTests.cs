@@ -22,7 +22,7 @@ namespace ProjectGenerator.Tests.DotNetCommands
             commandBuilder.ArgumentsFormat.ShouldBe("new sln -n SolutionName");
         }
 
-         [Fact]
+        [Fact]
         public void InFolder()
         {
             var commandBuilder = DotNet.New().Solution().InFolder("/rootfolder/").Build();

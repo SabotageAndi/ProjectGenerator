@@ -4,5 +4,6 @@ namespace ProjectGenerator.DotNetCommands
     {
         public static NewCommandBuilder New() => NewCommandBuilder.Create();
         public static BuildCommandBuilder Build() => BuildCommandBuilder.Create();
+        public static SolutionCommandBuilder Solution() => SolutionCommandBuilder.Create();
     }
 }

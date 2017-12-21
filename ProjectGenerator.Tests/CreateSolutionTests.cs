@@ -36,7 +36,8 @@ namespace ProjectGenerator.Tests
         {
             //ARRANGE
             _tempPath = CleanupTestDirectory();
-            var solution = new Solution(_tempPath, "TestSolution");
+            var solution = Solution.Create().InFolder(_tempPath).WithName("TestSolution");
+             
 
             //ACT
             var create = new Create();

@@ -10,32 +10,19 @@ namespace ProjectGenerator.Tests
     {
         private string _tempPath;
 
-
         public void Dispose()
         {
-            if (Directory.Exists(_tempPath))
-            {
-                Directory.Delete(_tempPath, true);
-            }
-        }
-
-        private string CleanupTestDirectory([CallerMemberName] string testName = null)
-        {
-            string testProjectPath = Path.Combine(Path.GetTempPath(), testName ?? "Test");
-
-            if (Directory.Exists(testProjectPath))
-            {
-                Directory.Delete(testProjectPath, true);
-            }
-
-            return testProjectPath;
+            // if (Directory.Exists(_tempPath))
+            // {
+            //     Directory.Delete(_tempPath, true);
+            // }
         }
 
         [Fact]
         public void SolutionIsCreated()
         {
             //ARRANGE
-            _tempPath = CleanupTestDirectory();
+            _tempPath = TestHelper.CreateDirectoryAndIfNeededCleanIt();
             var solution = Solution.Create().InFolder(_tempPath).WithName("TestSolution");
 
 

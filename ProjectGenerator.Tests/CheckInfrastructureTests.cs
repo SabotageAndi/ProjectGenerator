@@ -11,7 +11,7 @@ namespace ProjectGenerator.Tests
         {
             var result = DotNet.Version().Build().Execute();
 
-            result.ConsoleOutput.ShouldStartWith("2.0.3");
+            result.ConsoleOutput.ShouldStartWith("2.1.3");
         }
     }
 }

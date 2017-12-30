@@ -3,3 +3,6 @@ image: Visual Studio 2017
 build:
   project: ProjectGenerator.sln
   verbosity: minimal
+
+before_build:
+- cmd: dotnet restore

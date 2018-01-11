@@ -1,0 +1,5 @@
+Microsoft.NET.Test.Sdk
+Shouldly
+xunit
+xunit.runner.visualstudio
+Microsoft.DotNet.Watcher.Tools

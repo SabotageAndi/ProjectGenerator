@@ -3,6 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26124.0
 MinimumVisualStudioVersion = 15.0.26124.0
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".paket", ".paket", "{754C1CBB-C44A-415C-B4C5-B149F3C0F57E}"
+	ProjectSection(SolutionItems) = preProject
+		paket.dependencies = paket.dependencies
+	EndProjectSection
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectGenerator", "ProjectGenerator\ProjectGenerator.csproj", "{5E51A62C-DB50-434A-B25C-8611B99C4A0C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectGenerator.Tests", "ProjectGenerator.Tests\ProjectGenerator.Tests.csproj", "{DB51B29F-10E7-4419-8247-9F4782006CF4}"

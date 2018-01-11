@@ -13,18 +13,17 @@ namespace ProjectGenerator
                 throw new Exception($"Folder {solution.RootPath} is not empty!");
             }
 
-            Directory.CreateDirectory(solution.RootPath);
-
             DotNet.New().Solution().WithName(solution.Name).InFolder(solution.RootPath).Build().Execute();
 
             foreach (var project in solution.Projects)
             {
-                Project(project);
+                Project(project, solution);
             }
         }
 
-        private void Project(Project project)
+        private void Project(Project project, Solution solution)
         {
+            DotNet.New().Project().UseTemplate(project.Template).InFolder(Path.Combine(solution.RootPath, project.Name)).WithName(project.Name).Build().Execute();
         }
     }
 }

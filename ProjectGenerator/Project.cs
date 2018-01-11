@@ -22,11 +22,18 @@ namespace ProjectGenerator
         {
             var clone = Clone();
             clone.Name = name;
+            return clone;
+        }
 
+        public Project UseTemplate(string template)
+        {
+            var clone = Clone();
+            clone.Template = template;
             return clone;
         }
 
         public string Name { get; private set; }
+        public string Template {get; private set; }
 
         protected Project Clone()
         {

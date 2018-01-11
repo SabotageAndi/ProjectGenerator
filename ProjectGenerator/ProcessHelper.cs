@@ -25,7 +25,7 @@ namespace ProjectGenerator
             psi.RedirectStandardOutput = true;
             psi.RedirectStandardError = true;
             psi.UseShellExecute = false;
-            psi.CreateNoWindow = false;
+            psi.CreateNoWindow = true;            
             psi.WorkingDirectory = Environment.CurrentDirectory;
 
 

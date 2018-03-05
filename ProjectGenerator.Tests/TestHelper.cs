@@ -8,7 +8,7 @@ namespace ProjectGenerator.Tests
     {
         public static string CreateDirectoryAndIfNeededCleanIt([CallerMemberName] string testName = null)
         {
-            string testProjectPath = Path.Combine(Environment.CurrentDirectory, "TestRun", testName ?? "Test");
+            string testProjectPath = Path.Combine(Environment.CurrentDirectory, "TestRun", testName ?? "Test", Guid.NewGuid().ToString("N"));
 
             if (Directory.Exists(testProjectPath))
             {

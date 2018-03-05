@@ -19,14 +19,14 @@ namespace ProjectGenerator.Tests.DotNetCommands
         public void WithName()
         {
             var commandBuilder = DotNet.New().Solution().WithName("SolutionName").Build();
-            commandBuilder.ArgumentsFormat.ShouldBe("new sln -n 'SolutionName'");
+            commandBuilder.ArgumentsFormat.ShouldBe("new sln -n SolutionName");
         }
 
         [Fact]
         public void InFolder()
         {
             var commandBuilder = DotNet.New().Solution().InFolder("/rootfolder/").Build();
-            commandBuilder.ArgumentsFormat.ShouldBe("new sln -o '/rootfolder/'");
+            commandBuilder.ArgumentsFormat.ShouldBe("new sln -o /rootfolder/");
         }
     }
 }

@@ -18,7 +18,7 @@ namespace ProjectGenerator.DotNetCommands
         {
             if (value.IsNotNullOrWhiteSpace())
             {
-                argumentsFormat += $" {option} '{value}'";
+                argumentsFormat += $" {option} {value}";
             }
 
             return argumentsFormat;
